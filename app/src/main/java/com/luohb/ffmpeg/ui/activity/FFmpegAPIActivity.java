@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.luohb.ffmpeg.R;
 
 public class FFmpegAPIActivity extends AppCompatActivity implements View.OnClickListener {
+    private Button mInfo;
     private Button mButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class FFmpegAPIActivity extends AppCompatActivity implements View.OnClick
     private void initView(){
         mButton = findViewById(R.id.media_info_button);
         mButton.setOnClickListener(this);
+        mInfo = findViewById(R.id.ffmpeg_info);
+        mInfo.setOnClickListener(this);
 
     }
 
@@ -30,6 +33,9 @@ public class FFmpegAPIActivity extends AppCompatActivity implements View.OnClick
         int id = view.getId();
         if (id == R.id.media_info_button) {
             Intent intent = new Intent(this, MediaInfoActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.ffmpeg_info) {
+            Intent intent = new Intent(this, FFmpegInfoActivity.class);
             startActivity(intent);
         }
     }

@@ -1,11 +1,11 @@
 
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.4.1)
 
 # Declares and names the project.
 
 project("ffmpegdemo")
 
-file(GLOB SOURCE src/main/cpp/*.cpp)
+file(GLOB source_files ${CMAKE_SOURCE_DIR}/source/*.cpp)
 set(ffmpeg_lib_dir ${CMAKE_SOURCE_DIR}/../jniLibs/${CMAKE_ANDROID_ARCH_ABI})
 set(ffmpeg_head_dir ${CMAKE_SOURCE_DIR})
 include_directories("${ffmpeg_head_dir}/include")
@@ -60,7 +60,7 @@ add_library( # Sets the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             native-lib.cpp )
+             ${source_files} )
 
 
 find_library( # Sets the name of the path variable.

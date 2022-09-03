@@ -24,6 +24,7 @@
         <activity android:name=".ui.activity.CameraActivity"/>
         <activity android:name=".ui.activity.FFmpegAPIActivity"/>
         <activity android:name=".ui.activity.MediaInfoActivity"/>
+        <activity android:name=".ui.activity.FFmpegInfoActivity"/>
     </application>
 
 </manifest>

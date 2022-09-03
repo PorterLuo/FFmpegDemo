@@ -1,4 +1,4 @@
-package com.luohb.ffmpeg;
+package com.luohb.ffmpeg.ui.view;
 
 import android.content.Context;
 import android.opengl.GLSurfaceView;
@@ -41,10 +41,7 @@ public class XPlay extends GLSurfaceView implements Runnable,SurfaceHolder.Callb
 
     @Override
     public void run() {
-        Open("/sdcard/1080TV.mp4", getHolder().getSurface());
     }
-
-    public native void Open(String url, Object surface);
 
     @Override
     public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
