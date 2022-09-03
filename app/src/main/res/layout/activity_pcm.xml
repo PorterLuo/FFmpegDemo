@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pcm_start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="录制pcm音频"/>
+    <TextView
+        android:id="@+id/pcm_stop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="停止录制pcm音频"/>
+    <TextView
+        android:id="@+id/pcm_play_start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="播放pcm音频"/>
+    <TextView
+        android:id="@+id/pcm_play_stop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="停止播放pcm音频"/>
+</LinearLayout>
